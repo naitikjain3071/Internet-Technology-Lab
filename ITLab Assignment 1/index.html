@@ -1,21 +1,83 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Quiz App</title>
-  </head>
-  <body>
-      <h1><strong>IPL QUIZ</strong></h1>
-      <p>Think you know everything about IPL?
-      <br>Take this quiz to find out!!<br><br>
-      <button class="center" onclick="button()">Start Quiz</button></p>
-    <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css" />
+    <title>Quiz Website</title>
+</head>
+<body>
+<div id="cards_landscape_wrap-2">
+    <div class="container">
+        <h1><strong>QUIZ</strong></h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img src="https://static.toiimg.com/thumb/msid-86281531,imgsize-56172,width-400,resizemode-4/86281531.jpg" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6>IPL Quiz</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+                <button class="center btn btn-outline-primary" onclick="button1()" data-toggle="button" aria-pressed="false" autocomplete="off" style="margin-bottom: 35px;">Start Quiz</button>
+              </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img src="https://etimg.etb2bimg.com/photo/81478822.cms" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6>Entertainment Quiz</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+                <button class="center btn btn-outline-primary" onclick="button2()" data-toggle="button" aria-pressed="false" autocomplete="off" style="margin-bottom: 35px;">Start Quiz</button>
+              </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <a href="">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img src="https://bit.ly/3hGTQU4" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6>Current Affairs Quiz</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+                <button class="center btn btn-outline-primary" onclick="button3()" data-toggle="button" aria-pressed="false" autocomplete="off" style="margin-bottom: 35px;">Start Quiz</button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
     <script>
-    function button(){
-      location.href = "questions.html";
-    }
-  </script>
-  </body>
+    function button1(){
+            location.href = "questionsIpl.html";
+        }
+    </script>
+    <script>
+        function button2(){
+            location.href = "questionsEntertainment.html";
+        }
+    </script>
+    <script>
+        function button3(){
+            location.href = "questionsCurrentAffairs.html";
+        }
+    </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
