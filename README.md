@@ -1,2 +1,2 @@
-# Quiz-Website
-Ipl Quiz Website using HTML, CSS, JavaScript for ITlab Assignment 1
+# Internet Technology Lab
+Internet Technology Assignments
