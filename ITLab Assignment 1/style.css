@@ -10,7 +10,7 @@ body {
   background-image: url('https://t4.ftcdn.net/jpg/02/19/80/13/360_F_219801337_3kbasqLvgbUxAGVDH8QS35Sm4SEiPJFJ.jpg');
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
-  display: flex;
+
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -54,10 +54,14 @@ ul li label {
   cursor: pointer;
 }
 
-button {
-  background-color: #44ad67;
+#body{
+  display: flex;
+}
+
+#submit {
+  background-color: black;
   color: #fff;
-  border: none;
+  border: 10px;
   display: block;
   width: 100%;
   cursor: pointer;
@@ -67,16 +71,37 @@ button {
 }
 
 button:hover {
-  background-color: #732d91;
+  background-color: grey;
 }
 
 button:focus {
   outline: none;
-  background-color: #5e3370;
+  background-color: grey;
 }
 
 h1 {
   text-align: center;
   color: rgb(12, 8, 12);
   font-weight: 900;
+  font-size: 100px;
+  font-family: monospace;
+}
+p{
+  text-align: center;
+  color: rgb(12, 8, 12);
+  font-weight: 900;
+  font-size: 30px;
+  font-family: monospace;
+}
+.center {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  align-items: center;
+  padding: 20px 37px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
 }
