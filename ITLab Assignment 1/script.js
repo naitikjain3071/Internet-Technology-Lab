@@ -92,8 +92,12 @@ submitBtn.addEventListener('click', () => {
         } else{
             quiz.innerHTML = `
                 <h2>You scored ${score}/${quizData.length * 4}</h2>
-                <button id="submit" onclick="location.reload()">Play Again?</button>
+                <button id="submit" onclick="button()">Play Again?</button>
             `
         }
     }
 })
+
+function button() {
+    location.href = "index.html";
+}
