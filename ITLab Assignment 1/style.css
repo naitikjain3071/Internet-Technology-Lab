@@ -1,13 +1,9 @@
   
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
-* {
-  box-sizing: border-box;
-}
 
-body {
+body{
   background-color: #b8c6db;
-  background-image: url('https://t4.ftcdn.net/jpg/02/19/80/13/360_F_219801337_3kbasqLvgbUxAGVDH8QS35Sm4SEiPJFJ.jpg');
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
 
@@ -106,5 +102,19 @@ p{
   border-radius: 12px;
 }
 
-
-
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+.topnav a { 
+  float: left;
+  color: #f2f2f2; 
+  text-align: center;
+  padding: 14px 16px; 
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
