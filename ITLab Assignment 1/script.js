@@ -368,12 +368,14 @@ submitBtn.addEventListener('click', () => {
         } else{
             quiz.innerHTML = `
                 <h2>You scored ${score}/${quizDataIpl.length * 4}</h2>
-                <button id="submit" onclick="button()">Main Menu?</button>
+                <br>
+                <center>
+                <button id="submit" onclick="button()">Solve other quizzes?</button></center>
             `
         }
     }
 })
 
 function button() {
-    location.href = "index.html";
+    location.href = "quiz.html";
 } 
