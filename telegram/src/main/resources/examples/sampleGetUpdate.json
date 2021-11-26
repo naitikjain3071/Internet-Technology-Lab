@@ -1,0 +1,91 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 482191873,
+      "message": {
+        "message_id": 24,
+        "from": {
+          "id": 1029101054,
+          "is_bot": false,
+          "first_name": "Bond",
+          "username": "parasharankur",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 1029101054,
+          "first_name": "Bond",
+          "username": "parasharankur",
+          "type": "private"
+        },
+        "date": 1626059068,
+        "text": "/start",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 6,
+            "type": "bot_command"
+          }
+        ]
+      }
+    },
+    {
+      "update_id": 482191874,
+      "my_chat_member": {
+        "chat": {
+          "id": -500736532,
+          "title": "Test",
+          "type": "group",
+          "all_members_are_administrators": true
+        },
+        "from": {
+          "id": 1029101054,
+          "is_bot": false,
+          "first_name": "Bond",
+          "username": "parasharankur",
+          "language_code": "en"
+        },
+        "date": 1626059622,
+        "old_chat_member": {
+          "user": {
+            "id": 1869907302,
+            "is_bot": true,
+            "first_name": "Mule_Expert_Bot",
+            "username": "Mule_Expert_Bot"
+          },
+          "status": "left"
+        },
+        "new_chat_member": {
+          "user": {
+            "id": 1869907302,
+            "is_bot": true,
+            "first_name": "Mule_Expert_Bot",
+            "username": "Mule_Expert_Bot"
+          },
+          "status": "member"
+        }
+      }
+    },
+    {
+      "update_id": 482191875,
+      "message": {
+        "message_id": 26,
+        "from": {
+          "id": 1029101054,
+          "is_bot": false,
+          "first_name": "Bond",
+          "username": "parasharankur",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": -500736532,
+          "title": "Test",
+          "type": "group",
+          "all_members_are_administrators": true
+        },
+        "date": 1626059622,
+        "group_chat_created": true
+      }
+    }
+  ]
+}

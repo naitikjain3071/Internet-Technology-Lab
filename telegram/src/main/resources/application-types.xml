@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="sampleGetUpdate" format="json">
+      <types:shape format="weave" example="examples/sampleGetUpdate.json"><![CDATA[%dw 2.0
+
+type sampleGetUpdate = {|
+  ok: Boolean, 
+  result: Array<{|    update_id: Number {"typeId": "int"},     message: {|      message_id: Number {"typeId": "int"},       from: {|        id: Number {"typeId": "int"},         is_bot: Boolean,         first_name: String,         username: String,         language_code: String      |},       chat: {|        id: Number {"typeId": "int"},         first_name: String,         username: String,         "type": String      |},       date: Number {"typeId": "int"},       text: String,       entities: Array<{|        offset: Number {"typeId": "int"},         length: Number {"typeId": "int"},         "type": String      |}>
+    |}, 
+    my_chat_member: {|
+      chat: {|
+        id: Number {"typeId": "int"}, 
+        title: String, 
+        "type": String, 
+        all_members_are_administrators: Boolean
+      |}, 
+      from: {|
+        id: Number {"typeId": "int"}, 
+        is_bot: Boolean, 
+        first_name: String, 
+        username: String, 
+        language_code: String
+      |}, 
+      date: Number {"typeId": "int"}, 
+      old_chat_member: {|
+        user: {|
+          id: Number {"typeId": "int"}, 
+          is_bot: Boolean, 
+          first_name: String, 
+          username: String
+        |}, 
+        status: String
+      |}, 
+      new_chat_member: {|
+        user: {|
+          id: Number {"typeId": "int"}, 
+          is_bot: Boolean, 
+          first_name: String, 
+          username: String
+        |}, 
+        status: String
+      |}
+    |}
+  |}>
+|} {"example": "{\\\"ok\\\":true,\\\"result\\\":[{\\\"update_id\\\":482191873,\\\"message\\\":{\\\"message_id\\\":24,\\\"from\\\":{\\\"id\\\":1029101054,\\\"is_bot\\\":false,\\\"first_name\\\":\\\"Bond\\\",\\\"username\\\":\\\"parasharankur\\\",\\\"language_code\\\":\\\"en\\\"},\\\"chat\\\":{\\\"id\\\":1029101054,\\\"first_name\\\":\\\"Bond\\\",\\\"username\\\":\\\"parasharankur\\\",\\\"type\\\":\\\"private\\\"},\\\"date\\\":1626059068,\\\"text\\\":\\\"\\/start\\\",\\\"entities\\\":[{\\\"offset\\\":0,\\\"length\\\":6,\\\"type\\\":\\\"bot_command\\\"}]}},{\\\"update_id\\\":482191874,\\\"my_chat_member\\\":{\\\"chat\\\":{\\\"id\\\":-500736532,\\\"title\\\":\\\"Test\\\",\\\"type\\\":\\\"group\\\",\\\"all_members_are_administrators\\\":true},\\\"from\\\":{\\\"id\\\":1029101054,\\\"is_bot\\\":false,\\\"first_name\\\":\\\"Bond\\\",\\\"username\\\":\\\"parasharankur\\\",\\\"language_code\\\":\\\"en\\\"},\\\"date\\\":1626059622,\\\"old_chat_member\\\":{\\\"user\\\":{\\\"id\\\":1869907302,\\\"is_bot\\\":true,\\\"first_name\\\":\\\"Mule_Expert_Bot\\\",\\\"username\\\":\\\"Mule_Expert_Bot\\\"},\\\"status\\\":\\\"left\\\"},\\\"new_chat_member\\\":{\\\"user\\\":{\\\"id\\\":1869907302,\\\"is_bot\\\":true,\\\"first_name\\\":\\\"Mule_Expert_Bot\\\",\\\"username\\\":\\\"Mule_Expert_Bot\\\"},\\\"status\\\":\\\"member\\\"}}},{\\\"update_id\\\":482191875,\\\"message\\\":{\\\"message_id\\\":26,\\\"from\\\":{\\\"id\\\":1029101054,\\\"is_bot\\\":false,\\\"first_name\\\":\\\"Bond\\\",\\\"username\\\":\\\"parasharankur\\\",\\\"language_code\\\":\\\"en\\\"},\\\"chat\\\":{\\\"id\\\":-500736532,\\\"title\\\":\\\"Test\\\",\\\"type\\\":\\\"group\\\",\\\"all_members_are_administrators\\\":true},\\\"date\\\":1626059622,\\\"group_chat_created\\\":true}}]}"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#db623d61-9e5f-4f26-a8d2-e9dbb4927f9d">
+    <types:processor-declaration>
+      <types:output-event>
+        <types:message>
+          <types:payload type="sampleGetUpdate"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>
