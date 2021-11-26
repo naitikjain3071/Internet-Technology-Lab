@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Lyrics Translator</title>
+    <style>
+        body{
+  background-color: #b8c6db;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  color:white;
+  overflow: scroll;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    </style>
+</head>
+
+<body style="background-image: url('https://wallpapercave.com/wp/wp7937665.png' ); background-size: 100% 100%;">
+    <nav class="navbar">
+        <ul class="nav navbar-nav">
+          <li><a  style="color:white;"href="/auth/song">Home</a></li>
+          <li ><a  style="color:white;" href="/language">About Languages</a></li>  
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a style="color:white;" href="/logout">Log Out  </a></li>
+            <li><a href="#">  </a></li>
+        </ul>
+      </nav>
+    <div class="ui secondary menu">
+        <div class="header item" style="margin-left: 500px; font-size: 70px; color:white;">
+            Lyrics Translator
+        </div>
+    </div>
+    <div class="container" style="margin-left: 300px; margin-top: 20px; ">
+        <h2 class="ui dividing header" style="width: 80%; color:white; padding-bottom:30px;">Search lyrics</h2>
+
+        <form class="ui form" method="POST" action="/auth/song" style="width: 50%; font-size: 20px;">
+            <div class="field">
+                <label style="color:white;">Song Title</label>
+                <input type="text" name="songTitle" id="song" placeholder="Enter song title">
+            </div>
+            <div style="padding:10px;">
+            </div>
+            <div class="field">
+                <label style="color:white;">Artist Name</label>
+                <input type="text" name="artist" id="artist" placeholder="Enter artist name">
+
+            </div>
+            <div style="padding:15px;">
+            </div>
+            <button class="ui button" type="submit" style="height:50px; font-size:20px;">Search song</button>
+        </form>
+        <!-- <form id="form" method="POST" action="/">
+            <input type="text" name="songTitle" id="song" placeholder="Enter song title">
+            <input type="text" name="artist" id="artist" placeholder="Enter artist name">
+            <button>Search song</button>
+        </form> -->
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+    integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
