@@ -117,7 +117,7 @@ const quizDataEntertainment = [
         c: "1998",
         d: "1999",
         correct: "a",
-        //3
+        //3 done
     },
     {
         question: "Which one is the first Bollywood film of Sridevi",
@@ -162,7 +162,7 @@ const quizDataEntertainment = [
         c: "Troy",
         d: "Fight Clun",
         correct: "b",
-        //8
+        //8 done
     },
     {
         question: "Which one is the highest-grossing film ever?",
@@ -180,7 +180,7 @@ const quizDataEntertainment = [
         c: "Among the Hidden",
         d: "Hank the Cowdog",
         correct: "c",
-        //10
+        //10 done
     },
 ];
 
