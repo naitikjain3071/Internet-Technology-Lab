@@ -1,0 +1,58 @@
+{% load socialaccount %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+  body {
+    background: #111;
+  }
+  h1 {
+    height: 5em;
+    font-size: 5rem;
+    position: relative; 
+    color: white;
+  }
+  h1,a {
+    font-size: 5rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+    .head1 {
+    color: #FBAD30;
+    font-size: 4rem;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 1rem;
+  }
+
+  .head2 {
+    color: #EF4926;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 10rem;
+  }
+  
+</style>  
+</head>
+<body>
+  <div class="d-flex">
+    <h2 class="navbar-brand" href="" style="margin-top: 2rem; padding: 2rem;"><span class="head1" >Quiz</span> <span class="head2">Website</span></h2>
+  </div>
+  {% if user.is_authenticated %}
+    <meta http-equiv = "refresh" content = "2; url = http://127.0.0.1:8000/index" />
+  {% else %}
+  <center>
+    <h1>Google Authentication </h1>
+    <a id="google_login" class="btn btn-primary rounded-lg" href="{% provider_login_url 'google' %}" style="font-size: 3rem; " role="button">Login With Google</a>
+  </center>
+  {% endif %}
+</body>
+</html>
